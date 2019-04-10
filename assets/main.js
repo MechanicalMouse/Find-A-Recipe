@@ -179,13 +179,13 @@ $(document).ready(function () {
             //Cooking instructions
             recipeText = recipe.meals[0].strInstructions;
 
-
             /*Here lies the tedious part. Due to how the properties are set up for each recipe in TheMealDB's API,
             we cannot loop through each measurement or ingredient property. Additionally, there is always 20
             ingredient and measurement properties in each recipe JSON, even if there aren't 20 ingredients in the recipe.
             These empty properties are either filled with an empty string or null with no rhyme or reason. So we need to make
             sure these extraneous properties are not added to the page when the recipe is called up. But once this is done
             we have an array of the measurement for each ingredient*/
+
             if (recipe.meals[0].strMeasure1 !== "" && recipe.meals[0].strMeasure1 !== null) {
                 ingMeasureArr.push(recipe.meals[0].strMeasure1 + " " + recipe.meals[0].strIngredient1);
             }
