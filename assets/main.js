@@ -161,6 +161,9 @@ $(document).ready(function () {
             foodImageHtml.attr("alt", imageAlt);
             recipeText = recipe.meals[0].strInstructions;
 
+            //This part looks very very ugly. But the way theMealDB's database is set up, there is no consistency to whether an
+            //ingredient or measurement is either set to "" or null for all 20 ingredients. So we basically have to cover all of our bases.
+
             if (recipe.meals[0].strMeasure1 !== "" && recipe.meals[0].strMeasure1 !== null) {
                 ingMeasureArr.push(recipe.meals[0].strMeasure1 + " " + recipe.meals[0].strIngredient1);
             }
