@@ -8,6 +8,7 @@ There are some things that can be added, such as filtering results based on diet
 
 Contributors: CJ Vaughn (theMealDB.com API data retrieval and display ), Bonnie Acuna (SASS/CSS), Bradley King (Youtube API video retrieval and display), Laura Green (HTML/CSS)
 
+Deployed Link: https://rawkitman.github.io/Find-A-Recipe/
 
 Initial page view: 
 
